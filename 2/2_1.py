@@ -27,7 +27,6 @@ with open ("input.txt", "r") as f:
             if FLAG:
                 break
         if not FLAG:
-            print(game_num)
             sum += game_num
 
 print(sum)
