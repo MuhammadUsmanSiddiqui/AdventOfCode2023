@@ -8,7 +8,6 @@ def adjacent_symbol_present(a,b,n,lines):
     return False
 
 with open("input.txt", "r") as f:
-    nums=[]
     sum=0
     lines = f.readlines()
     lines = [line.strip() for line in lines]
@@ -23,7 +22,6 @@ with open("input.txt", "r") as f:
                     if j+n>=len(lines[i]):
                         break
                 if adjacent_symbol_present(i,j,n,lines):
-                    nums.append(int(lines[i][j:j+n]))
                     sum += int(lines[i][j:j+n])
             j+=n
 
